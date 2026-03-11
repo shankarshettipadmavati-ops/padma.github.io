@@ -1,0 +1,197 @@
+:root{
+
+--primary:#1f3d2b;
+--accent:#c6a75a;
+--light:#f8f6f2;
+--dark:#111;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:var(--light);
+color:#333;
+line-height:1.6;
+}
+
+.section{
+padding:80px 10%;
+text-align:center;
+}
+
+h2{
+margin-bottom:40px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+background:white;
+z-index:1000;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.btn{
+background:var(--accent);
+color:white;
+padding:12px 25px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+border-radius:5px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.menu-item{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.menu-item img{
+width:100%;
+border-radius:10px;
+}
+
+.menu-filters button{
+margin:10px;
+padding:10px 20px;
+cursor:pointer;
+}
+
+.special-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.special-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.special-card:hover{
+transform:translateY(-10px);
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+cursor:pointer;
+transition:.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.review-slider{
+max-width:600px;
+margin:auto;
+}
+
+.review{
+display:none;
+}
+
+.review.active{
+display:block;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border:1px solid #ccc;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#222;
+color:white;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .navbar{
+background:#1b1b1b;
+}
+
+.dark .menu-item,
+.dark .special-card{
+background:#222;
+}
